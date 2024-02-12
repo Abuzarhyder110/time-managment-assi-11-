@@ -1,0 +1,25 @@
+#To-do List: Develop a program that allows the user to add tasks to a to-do list. Use if statements to catogorize tasks as urgent, important, or less important based
+#on their due date and priorty.
+
+urgent = []
+important = []
+less_important = []
+
+task = input("Enter the task: ")
+due_date = input("Enter the due date (e.g., DD/MM/YYYY): ")
+priorty = input("Enter the priorty (urgent, important, less important): ").lower()
+
+
+if priorty == "urgent"
+    urgent.append((task, due_date))
+elif priorty == "important"
+    important.append((task, due_date))
+elif priorty == "less important"
+    less_important.append((task, due_date))
+else: 
+    print("Invalid priorty input.")
+
+
+print("Urgent tasks:", urgent)
+print("Important tasks:", important)
+print("Less imporatnt tasks:", less_important)
