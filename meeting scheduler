@@ -1,0 +1,27 @@
+# Meeting Schedular: Design a program that helps user find a common meeting time among a groups. Use if-else statements to check available time slots in each user's
+#calender and suggest suitable meeting times.
+
+user_calenders = {
+    "Alice": ["9:00", "10:00", "11:00", "14:00", "15:00"],
+    "Bob": ["9:30", "10:30", "11:30", "14:30", "15:30"],
+    "Charlie": ["10:00", "11:00", "12:00", "15:00, "16:00"]
+}
+
+common_meeting_times = []
+
+for hour in range(9, 17):
+    hour_str = str(hour) if hour >= 10 else "0" + str(hour)
+
+    all_available = True 
+    for user_calender in user_calendars.values():
+        if hour_str + ":00" not in user_calendar:
+            all_available = False 
+            break
+
+    if all_available:
+        common_meeting_times.append(hour_str +":00")
+
+print("Common meeting times:")
+for time_slot in common_meeting_time:
+    print(time_slot)
+    
